@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Pass data in the welcome page
-Route::get('/{name}', function ($name) {
-   
-    return view('user',[$name=>$name]);
+//Pass data
+Route::get("/", function () {
+    
+    return view('welcome');
 });
 Route::get('/about',function()
 {
