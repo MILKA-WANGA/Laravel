@@ -20,3 +20,5 @@ Route::get('/about',function()
 {
     return view('about');
 });
+//Short code
+Route::view("contact","contact");
