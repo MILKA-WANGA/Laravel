@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 //import controller
 use App\Http\Controllers\Users;
+use App\Http\UserControllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,4 @@ Route::view("contact","contact");
 //Define controllers and passed data in controller;
 //Route::get("users/{user}",[Users::class,'index']);
 Route::view("users","users");
+Route::get("viewUsers",[UsersController::class],'workLoad');
