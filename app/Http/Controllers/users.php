@@ -10,6 +10,6 @@ class Users extends Controller
         public function index($user)
     {   
         echo $user;
-        echo "This is how we define function in contoller";
+        echo "    This is how we define function in contoller";
     }
 }
