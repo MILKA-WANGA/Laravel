@@ -7,3 +7,8 @@
  @else
  <h3>Unnown user</h3>
  @endif
+
+ {{-- for Loop --}}
+ @for($i=0; $i<10; $i++)
+ <h3>{{$i}}</h3>
+ @endfor
