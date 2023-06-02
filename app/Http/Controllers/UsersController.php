@@ -8,6 +8,6 @@ class UsersController extends Controller
 {
     public function workLoad()
     {
-        return view("viewUsers", ['viewUsers'=>['Janet']]);
+        return view("viewUsers", ['viewUser'=>['Sam']]);
     }
 }
