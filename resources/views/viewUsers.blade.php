@@ -1,1 +1,1 @@
-<h1>    View Users</h1>
+<h1>    View Users    {{count($viewUsers)}}</h1>
