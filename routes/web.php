@@ -23,3 +23,5 @@ Route::get('/about',function()
 });
 //Short code
 Route::view("contact","contact");
+//Define controllers
+Route::get("users",Users::class,['index']);
