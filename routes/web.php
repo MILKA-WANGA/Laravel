@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//import controller
+use App\Http\Controllers\Users;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +26,4 @@ Route::get('/about',function()
 //Short code
 Route::view("contact","contact");
 //Define controllers
-Route::get("users",Users::class,['index']);
+Route::get("users",[Users::class,'index']);
