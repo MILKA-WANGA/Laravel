@@ -25,5 +25,5 @@ Route::get('/about',function()
 });
 //Short code
 Route::view("contact","contact");
-//Define controllers
-Route::get("users",[Users::class,'index']);
+//Define controllers and passed data in controller;
+Route::get("users/{user}",[Users::class,'index']);
