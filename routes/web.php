@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+//Passdata
+Route::get('/{name}', function ($name) {
+    echo $name;
     return view('user');
 });
 Route::get('/about',function()
