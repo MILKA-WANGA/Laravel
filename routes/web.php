@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\FormController;
+use GuzzleHttp\Middleware;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,13 +39,15 @@ Route::post("formView",[FormController::class,'getData']);
 Route::view("login","formView");
 Route::view("home","home");
 Route::view("noaccess","noaccess");
-//Group Route middleware
+//Group  middleware
 Route::group(["Middleware"=>["groupAge"]],function()
 {
     Route::view("contact","contact");
     Route::view("home","home");
     
 });
+// Route Middleware
+Route::view("inner","inner")->Middleware("ageProtects");
 
 
 
