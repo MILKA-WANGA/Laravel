@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\FirstUser;
 use Illuminate\Support\Facades\Route;
 //import controller
 use App\Http\Controllers\Users;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\FormController;
 use GuzzleHttp\Middleware;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +51,7 @@ Route::group(["Middleware"=>["groupAge"]],function()
 });
 // Route Middleware
 Route::view("inner","inner")->Middleware("ageProtects");
+Route::get("firstUser",[FirstUser::class,'index']);
 
 
 
