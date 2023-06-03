@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 //import controller
 use App\Http\Controllers\Users;
 use App\Http\Controllers\UsersController;
-
+use App\Http\Controllers\FormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +30,9 @@ Route::view("contact","contact");
 //Route::get("users/{user}",[Users::class,'index']);
 Route::view("users","users");
 Route::get("viewUsers",[UsersController::class,'workLoad']);
+//Call the FormController
+Route::post("formView",[FormController::class,'getData']);
+//Call tjhe formView.blade.php
+// The first formView is the path and the second is the page
+Route::view("formView","formView");
+
