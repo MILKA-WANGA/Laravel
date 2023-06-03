@@ -12,8 +12,8 @@ class FormController extends Controller
         // return $req->input();
         // Validate fields
         $req->validate([
-            'username'=>'required',
-            'password'=>'required'
+            'username'=>'required| Max:10 ',
+            'password'=>'required | Min:8'
         ]);
         return $req->input();
     }
