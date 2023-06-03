@@ -17,3 +17,7 @@
  <h3>{{$item}}</h3>
      
  @endforeach
+ <script>
+    $data=@json($viewUser);
+    console.warn($data);
+ </script>
