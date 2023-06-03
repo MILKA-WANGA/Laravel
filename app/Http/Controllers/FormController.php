@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    //
-    public function getData()
+    //get  form input data
+    public function getData(Request $req)
     {
-        return("formView");
+        return $req->input();
     }
 }
