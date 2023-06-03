@@ -17,6 +17,9 @@
  <h3>{{$item}}</h3>
      
  @endforeach
+ {{-- Authentication token --}}
+ @csrf
+ {{-- Json format --}}
  <script>
     $data=@json($viewUser);
     console.warn($data);
