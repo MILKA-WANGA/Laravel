@@ -37,4 +37,12 @@ Route::post("formView",[FormController::class,'getData']);
 Route::view("login","formView");
 Route::view("home","home");
 Route::view("noaccess","noaccess");
+//Group Route middleware
+Route::group(["Middleware"=>["groupAge"],function()
+{
+    Route::view("contact","contact");
+    Route::view("home","home");
+}]);
+
+
 
