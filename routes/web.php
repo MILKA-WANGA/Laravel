@@ -42,6 +42,7 @@ Route::group(["Middleware"=>["groupAge"]],function()
 {
     Route::view("contact","contact");
     Route::view("home","home");
+    
 });
 
 
