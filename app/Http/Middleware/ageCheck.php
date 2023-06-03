@@ -15,7 +15,14 @@ class ageCheck
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
     public function handle(Request $request, Closure $next)
-    {
+
+    {   
+        //  if  condition
+        if($request->age && $request->age<18)
+        {
+            return redirect('noaccess');
+        }
+        // echo "<h1>This is Global Middleware</h1>";
         return $next($request);
     }
 }

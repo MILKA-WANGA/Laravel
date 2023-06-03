@@ -35,4 +35,6 @@ Route::post("formView",[FormController::class,'getData']);
 //Call tjhe formView.blade.php
 // The first formView is the path and the second is the page
 Route::view("login","formView");
+Route::view("home","home");
+Route::view("noaccess","noaccess");
 
