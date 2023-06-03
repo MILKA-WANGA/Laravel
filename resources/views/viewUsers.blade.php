@@ -12,3 +12,8 @@
  @for($i=0; $i<10; $i++)
  <h3>{{$i}}</h3>
  @endfor
+ {{-- foreach --}}
+ @foreach ($viewUser as $item)
+ <h3>{{$item}}</h3>
+     
+ @endforeach

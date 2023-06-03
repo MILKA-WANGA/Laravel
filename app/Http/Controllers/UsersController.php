@@ -8,6 +8,7 @@ class UsersController extends Controller
 {
     public function workLoad()
     {
-        return view("viewUsers", ['viewUser'=>['Sam']]);
+        $names=["Anyango","Morine","Beatrice","Linnet"];
+        return view("viewUsers", ['viewUser'=>$names]);
     }
 }
