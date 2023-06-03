@@ -11,9 +11,10 @@
 {{-- Make error appear in its field --}}
 <form action="formView" method="POST">
     @csrf
-<input type="text" name="username" placeholder="username"><br>
-@error('username'){{$message}}@enderror<br>
-<input type="password" name="password" placeholder="password"><br><br>
+<input type="text" name="username" placeholder="username">
+@error('username')<span style="color:red">{{$message}}</span>@enderror<br><br>
+<input type="password" name="password" placeholder="password">
+@error('password')<span style="color:red">{{$message}}</span>@enderror<br><br>
 
 <input type="submit" value="Submit">
 </form>
