@@ -47,7 +47,7 @@ class Kernel extends HttpKernel
         ],
         'protectedGroup' =>[
             \App\Http\Middleware\groupAge::class,
-        ]
+        ],
     ];
 
     /**
