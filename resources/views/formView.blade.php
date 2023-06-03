@@ -2,5 +2,5 @@
 {{-- Action is the path in route --}}
 <form action="formView" method="POST">
 <input type="text" name="username" placeholder="username"><br><br>
-<input type="button" value="Submit">
+<input type="submit" value="Submit">
 </form>

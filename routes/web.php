@@ -34,5 +34,5 @@ Route::get("viewUsers",[UsersController::class,'workLoad']);
 Route::post("formView",[FormController::class,'getData']);
 //Call tjhe formView.blade.php
 // The first formView is the path and the second is the page
-Route::view("formView","formView");
+Route::view("login","formView");
 
