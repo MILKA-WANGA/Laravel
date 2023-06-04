@@ -62,6 +62,7 @@ Route::delete("loginView",[LoginController::class,'loginRequest']);
 Route::view("logins","loginView");
 Route::view("log","loginSession");
 Route::post("loginSession",[SessionController::class,'index']);
+Route::view("profile","profile");
 
 
 
