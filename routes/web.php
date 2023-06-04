@@ -7,6 +7,7 @@ use App\Http\Controllers\Users;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\UserApiController;
 use GuzzleHttp\Middleware;
 
 
@@ -54,7 +55,7 @@ Route::group(["Middleware"=>["groupAge"]],function()
 Route::view("inner","inner")->Middleware("ageProtects");
 Route::get("firstUser",[FirstUser::class,'index']);
 Route::get("users",[UserController::class,'getData']);
-
+Route::get("hello",[UserApiController::class,'index']);
 
 
 
