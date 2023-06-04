@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\UserApiController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\sessionController;
 use GuzzleHttp\Middleware;
 
 
@@ -60,6 +61,7 @@ Route::get("hello",[UserApiController::class,'index']);
 Route::delete("loginView",[LoginController::class,'loginRequest']);
 Route::view("logins","loginView");
 Route::view("loginSession","loginSession");
+Route::post("loginSession",[sessionController::class,'loginSession']);
 
 
 
