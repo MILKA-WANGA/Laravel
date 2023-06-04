@@ -10,6 +10,6 @@ class UploadController extends Controller
     function index()
     {
         echo "You have uploaded your file";
-        return view("uploadFile");
+        // return view("uploadFile");
     }
 }
