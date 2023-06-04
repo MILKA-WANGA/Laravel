@@ -91,7 +91,7 @@ if(session()->has("user"))
 return redirect("log");
 });
 Route::view("addFlash","addFlashSession");
-Route::post("addFlashSessio",[AddFlashController::class,'addCotroller']);
+Route::post("addFlashSession",[AddFlashController::class,'addController']);
 
 
 

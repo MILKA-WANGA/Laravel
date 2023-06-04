@@ -11,6 +11,7 @@ class AddFlashController extends Controller
     {
     $data=$req->input("user");
     $req->session()->flash($data);
+    return redirect("addFlashSession");
    
     }
 }
