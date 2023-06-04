@@ -60,9 +60,25 @@ Route::get("users",[UserController::class,'getData']);
 Route::get("hello",[UserApiController::class,'index']);
 Route::delete("loginView",[LoginController::class,'loginRequest']);
 Route::view("logins","loginView");
-Route::view("log","loginSession");
-Route::post("loginSession",[SessionController::class,'index']);
+// Route::view("log","loginSession");
 Route::view("profile","profile");
+
+Route::get("/log",function()
+{
+if(session()->has("user"))
+{
+    return redirect("profile");
+    
+}
+return view("loginSession");
+});
+
+
+Route::post("loginSession",[SessionController::class,'index']);
+
+
+
+
 //logout
 Route::get("/logout",function()
 {
