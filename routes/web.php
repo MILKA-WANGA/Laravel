@@ -8,6 +8,7 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\UserApiController;
+use App\Http\Controllers\LoginController;
 use GuzzleHttp\Middleware;
 
 
@@ -56,7 +57,7 @@ Route::view("inner","inner")->Middleware("ageProtects");
 Route::get("firstUser",[FirstUser::class,'index']);
 Route::get("users",[UserController::class,'getData']);
 Route::get("hello",[UserApiController::class,'index']);
-Route::post("loginView",[LoginController::class,'login']);
+Route::get("loginView",[LoginController::class,'loginRequest']);
 Route::view("logins","loginView");
 
 
