@@ -53,7 +53,7 @@ Route::group(["Middleware"=>["groupAge"]],function()
 // Route Middleware
 Route::view("inner","inner")->Middleware("ageProtects");
 Route::get("firstUser",[FirstUser::class,'index']);
-Route::get("users",[UsersController::class,'getData']);
+Route::get("users",[UserController::class,'getData']);
 
 
 
