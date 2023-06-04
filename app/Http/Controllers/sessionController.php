@@ -11,7 +11,8 @@ class SessionController extends Controller
     {
     $data= $req->input();
     $req->session()->put("user",$data["username"]);
-     echo session("user");
+    //  echo session("user");
+    return redirect("profile");
 
 
     }
