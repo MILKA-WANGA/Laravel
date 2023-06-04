@@ -1,4 +1,4 @@
-<h3>Welcome to my Website</h3>
-<a href="">Home</a>
-<a href="">About</a>
-<a href="">Contact</a>
+<h3>{{__('profile.welcome')}}</h3>
+<a href="">{{__('profile.about')}}</a>
+<a href="">{{__('profile.contact')}}</a>
+<a href="">{{__('profile.home')}}</a>

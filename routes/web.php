@@ -95,6 +95,7 @@ Route::view("addFlashSession","addFlashSession");
 Route::post("addMember",[AddFlashController::class,'add']);
 Route::view("upload","uploadFile");
 Route::post("uploadFile",[UploadController::class,'index']);
+Route::view("lang","profileLanguage");
 
 
 

@@ -1,7 +1,8 @@
 <?php
 return[
-    'home'=>'Welcome to our website',
+    'welcome'=>'Welcome to our website',
+    'home'=>'home',
     'about'=>'about',
     'contact'=>'contact'
-];
+]
 ?>

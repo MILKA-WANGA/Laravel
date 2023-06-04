@@ -1,7 +1,8 @@
 <?php
 return[
-    'home'=>'Welcome to our website',
-    'about'=>'about',
-    'contact'=>'contact'
-];
+    'welcome'=>'हमारी वेब साईट में स्वागत है',
+    "home"=>"घर",
+    'about'=>'के बारे में',
+    'contact'=>'संपर्क'
+]
 ?>
