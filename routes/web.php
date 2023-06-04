@@ -11,6 +11,7 @@ use App\Http\Controllers\UserApiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\sessionController;
 use App\Http\Controllers\AddFlashController;
+use App\Http\Controllers\UploadController;
 use GuzzleHttp\Middleware;
 
 
@@ -93,6 +94,7 @@ return redirect("log");
 Route::view("addFlashSession","addFlashSession");
 Route::post("addMember",[AddFlashController::class,'add']);
 Route::view("upload","uploadFile");
+Route::post("uploadFile",[UploadController::class,'index'])
 
 
 
