@@ -59,6 +59,7 @@ Route::get("users",[UserController::class,'getData']);
 Route::get("hello",[UserApiController::class,'index']);
 Route::delete("loginView",[LoginController::class,'loginRequest']);
 Route::view("logins","loginView");
+Route::view("loginSession","loginSession");
 
 
 
