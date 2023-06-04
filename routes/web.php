@@ -64,12 +64,15 @@ Route::view("log","loginSession");
 Route::post("loginSession",[SessionController::class,'index']);
 Route::view("profile","profile");
 //logout
+Route::get("/logout",function()
+{
 if(session()->has("user"))
 {
     if(session()->pull("user"));
     
 }
 return redirect("log");
+});
 
 
 
