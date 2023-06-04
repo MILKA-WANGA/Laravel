@@ -11,6 +11,6 @@ class UserApiController extends Controller
     //
     public function index()
     {
-        return Http::get("https://www.google.com/");
+        return Http::get("http://localhost/Farmers/home.php");
     }
 }
