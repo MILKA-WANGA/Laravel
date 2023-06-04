@@ -92,8 +92,7 @@ return redirect("log");
 });
 Route::view("addFlashSession","addFlashSession");
 Route::post("addMember",[AddFlashController::class,'add']);
-
-
+Route::post("upload","uploadFile");
 
 
 
