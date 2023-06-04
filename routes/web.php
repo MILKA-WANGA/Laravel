@@ -57,7 +57,7 @@ Route::view("inner","inner")->Middleware("ageProtects");
 Route::get("firstUser",[FirstUser::class,'index']);
 Route::get("users",[UserController::class,'getData']);
 Route::get("hello",[UserApiController::class,'index']);
-Route::post("loginView",[LoginController::class,'loginRequest']);
+Route::put("loginView",[LoginController::class,'loginRequest']);
 Route::view("logins","loginView");
 
 
