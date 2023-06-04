@@ -1,10 +1,11 @@
-<h1>FLash Session</h1>
-<form action="formView" method="POST">
-    @csrf
-<input type="text" name="username" placeholder="username">
-@error('username')<span style="color:red">{{$message}}</span>@enderror<br><br>
-<input type="password" name="password" placeholder="password">
-@error('password')<span style="color:red">{{$message}}</span>@enderror<br><br>
+<h3>Login Form</h3>
 
-<input type="submit" value="Submit">
+<form  action="" method="POST">
+    {{-- Using put and delete methods  use method post and add the following code--}}
+    {{-- {{method_field('DELETE')}} --}}
+    @csrf
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="email" name="email" placeholder="Email">
+     <input type="button" value="button">
 </form>

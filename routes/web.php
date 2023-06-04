@@ -89,6 +89,7 @@ if(session()->has("user"))
 }
 return redirect("log");
 });
+Route::view("addFlash","addFlashSession");
 
 
 
