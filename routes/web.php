@@ -90,8 +90,8 @@ if(session()->has("user"))
 }
 return redirect("log");
 });
-Route::view("addFlash","addFlashSession");
-Route::post("addFlashSession",[AddFlashController::class,'addController']);
+Route::view("addFlashSession","addFlashSession");
+Route::post("addMember",[AddFlashController::class,'add']);
 
 
 

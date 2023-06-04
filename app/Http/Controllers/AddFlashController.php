@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 class AddFlashController extends Controller
 {
     //
-    function addController(Request $req)
+    function add(Request $req)
     {
-    $data=$req->input("user");
-    $req->session()->flash($data);
-    return redirect("addFlashSession");
+        $data=$req->input('user');
+        $req-> session()->flash('user',$data);
+        return redirect("addFlashSession");
+      
    
     }
 }
