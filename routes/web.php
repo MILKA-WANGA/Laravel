@@ -10,6 +10,7 @@ use App\Http\Controllers\FormController;
 use App\Http\Controllers\UserApiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\sessionController;
+use App\Http\Controllers\AddFlashController;
 use GuzzleHttp\Middleware;
 
 
@@ -90,6 +91,7 @@ if(session()->has("user"))
 return redirect("log");
 });
 Route::view("addFlash","addFlashSession");
+Route::post("addFlashSessio",[AddFlashController::class,'addCotroller']);
 
 
 
