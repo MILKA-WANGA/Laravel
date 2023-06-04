@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 
 class UserApiController extends Controller
@@ -10,6 +11,6 @@ class UserApiController extends Controller
     //
     public function index()
     {
-        return "API data";
+        return Http::get("https://www.google.com/");
     }
 }
