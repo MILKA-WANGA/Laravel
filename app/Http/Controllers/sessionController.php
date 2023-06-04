@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 //Creating session
-class sessionController extends Controller
+class SessionController extends Controller
 {
     //
-    public function loginSession(Request $req)
+    public function index(Request $req)
     {
     $data= $req->input();
-    $req->session()->put("user",$data["user"]);
+    $req->session()->put("user",$data["username"]);
+     echo session["user"]
 
 
     }
