@@ -19,7 +19,7 @@
             {{-- Adda delete operation --}}
             <td>
                 <a href={{"delete/".$item['id']}}>Delete</a>
-                a href={{"edit/".$item['id']}}>Edit</a>
+                <a href={{"edit/".$item['id']}}>Edit</a>
             </td>
            
         </tr>

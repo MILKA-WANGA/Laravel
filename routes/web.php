@@ -108,6 +108,7 @@ Route::view("list","usersList");
 Route::get("list",[ListController::class,'index']);
 //Delete route
 Route::get('delete/{id}',[ListController::class,'delete']);
+Route::get('edit/{id}',[ListController::class,'edit']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
 

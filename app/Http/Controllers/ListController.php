@@ -24,4 +24,9 @@ class ListController extends Controller
         return redirect("list");
         
     }
+    function edit($id)
+    {
+        $data= Member::find($id);
+        return view("usersList",["useredit=>$data"]);
+    }
 }
