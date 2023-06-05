@@ -13,6 +13,7 @@ use App\Http\Controllers\sessionController;
 use App\Http\Controllers\AddFlashController;
 use App\Http\Controllers\ListController;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\AddMembers;
 use GuzzleHttp\Middleware;
 
 
@@ -106,5 +107,5 @@ Route::get('/lang/{lang}',function($lang)
 Route::view("list","usersList");
 Route::get("list",[ListController::class,'index']);
 Route::view("add","addMember");
-
+Route::post("add",[AddMembers::class,'show'])
 
