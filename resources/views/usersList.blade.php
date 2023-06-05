@@ -22,3 +22,6 @@
     
 
 </table>
+<span>
+    {{$users}}.links()
+</span>
