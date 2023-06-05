@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\addMember;
 
-class AddMember extends Controller
+class AddMembers extends Controller
 {
     //
     function show(Request $req)
     {
-     
+     $member=new addMe
     }
 }
