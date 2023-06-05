@@ -15,4 +15,13 @@ class ListController extends Controller
         //Passed data in a view:usersList
         return view("usersList",['users'=>$data]);
     }
+    //Create a delete function
+    function delete($id)
+    {
+        //Find the id
+        $data= Member::find($id);
+        $data->delete();
+        return redirect("list");
+        
+    }
 }
