@@ -27,7 +27,7 @@ class ListController extends Controller
     function edit($id)
     {
         $data= Member::find($id);
-        return view("update",["users"=>$data]);
+        return view("update",["data"=>$data]);
     }
     function update(Request $req)
     {
