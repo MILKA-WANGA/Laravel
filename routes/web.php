@@ -106,6 +106,8 @@ Route::get('/lang/{lang}',function($lang)
 );
 Route::view("list","usersList");
 Route::get("list",[ListController::class,'index']);
+//Delete route
+Route::get("delete/{id}",[ListController::class,'index']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
 

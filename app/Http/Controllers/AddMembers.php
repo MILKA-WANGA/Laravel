@@ -15,6 +15,7 @@ class AddMembers extends Controller
      $member->email=$req->email;
      $member->password=$req->password;
      $member->save();
+     return view("adUsers");
 
     }
 }

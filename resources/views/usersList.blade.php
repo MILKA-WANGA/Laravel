@@ -16,6 +16,8 @@
             <td>{{$item['idNumber']}}</td>
             <td>{{$item['role']}}</td>
             <td>{{$item['dateOfBirth']}}</td>
+            {{-- Adda delete operation --}}
+            <td><a href="delete/.$item['id']">Delete</a></td>
            
         </tr>
    @endforeach
