@@ -11,6 +11,7 @@ use App\Http\Controllers\UserApiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\sessionController;
 use App\Http\Controllers\AddFlashController;
+use App\Http\Controllers\ListController;
 use App\Http\Controllers\UploadController;
 use GuzzleHttp\Middleware;
 
@@ -103,6 +104,6 @@ Route::get('/lang/{lang}',function($lang)
 }
 );
 Route::view("list","usersList");
-
+Route::get("usersList",[ListController::class,'index']);
 
 
