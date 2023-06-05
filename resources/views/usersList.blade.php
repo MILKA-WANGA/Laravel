@@ -23,5 +23,11 @@
 
 </table>
 <span>
-    {{$users}}.links()
+    {{$users->links()}}
 </span>
+{{-- //Remove Css style --}}
+<style>
+    .w-5{
+        display: none;
+    }
+</style>
