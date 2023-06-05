@@ -13,6 +13,6 @@ class ListController extends Controller
         //Store fetched data in a variable
         $data= Member::all();
         //Passed data in a view:usersList
-        return view("usersList",['user'=>$data]);
+        return view("usersList",['users'=>$data]);
     }
 }

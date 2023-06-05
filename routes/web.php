@@ -104,6 +104,6 @@ Route::get('/lang/{lang}',function($lang)
 }
 );
 Route::view("list","usersList");
-Route::get("usersList",[ListController::class,'index']);
+Route::get("list",[ListController::class,'index']);
 
 
