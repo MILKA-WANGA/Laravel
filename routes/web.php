@@ -107,5 +107,5 @@ Route::get('/lang/{lang}',function($lang)
 Route::view("list","usersList");
 Route::get("list",[ListController::class,'index']);
 Route::view("add","addMember");
-Route::post("add",[AddMembers::class,'show'])
+Route::post("add",[AddMembers::class,'show']);
 
