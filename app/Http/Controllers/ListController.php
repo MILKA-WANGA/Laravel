@@ -27,8 +27,16 @@ class ListController extends Controller
     function edit($id)
     {
         $data= Member::find($id);
-        return view("usersList",["useredit=>$data"]);
+        return view("update",["users"=>$data]);
     }
-    function update()
-    return view()
+    function update(Request $req)
+    {
+    $data=Member::find($req->id);
+    $data->name=$req->name;
+    $data->idNumber=$req->idNumber;
+    $data->role=$req->role;
+    $data->dateOfBirth=$req->ndateOfBirth;
+    $data->save();
+    return redirect("list");
+    }
 }

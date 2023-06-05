@@ -112,7 +112,7 @@ Route::get('edit/{id}',[ListController::class,'edit']);
 //create an update route view
 Route::view("update","update");
 //Create a route for update button
-
+Route::post("update",[ListController::class,'update']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
 
