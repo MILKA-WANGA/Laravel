@@ -1,5 +1,6 @@
 <h1>Update Profile</h1>
-<form action="">
+<form action="update" method="POST">
+    @csrf
  <input type="hidden" name="id" value="{{$data['id']}}">
  <input type="name" name="name" value="{{$data['name']}}">
  <input type="number" name="idNumber" value="{{$data['idNumber']}}">
