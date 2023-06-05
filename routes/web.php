@@ -102,6 +102,7 @@ Route::get('/lang/{lang}',function($lang)
     return view("profileLanguage");
 }
 );
+Route::view("list","usersList");
 
 
 
