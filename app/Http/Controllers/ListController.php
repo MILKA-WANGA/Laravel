@@ -10,6 +10,9 @@ class ListController extends Controller
     //
     function index()
     {
-        return Member::all();
+        //Store fetched data in a variable
+        $data= Member::all();
+        //Passed data in a view:usersList
+        return view("usersList",['user'=>$data]);
     }
 }
