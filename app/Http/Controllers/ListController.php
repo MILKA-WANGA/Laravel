@@ -36,10 +36,10 @@ class ListController extends Controller
     
      $data=Member::find($req->id);
      $data->name=$req->name;
-    // // $data->idNumber=$req->idNumber;
-    // // $data->role=$req->role;
-    // // $data->dateOfBirth=$req->ndateOfBirth;
-    $data->save();
+     $data->idNumber=$req->idNumber;
+     $data->role=$req->role;
+     $data->dateOfBirth=$req->dateOfBirth;
+     $data->save();
      return redirect("list");
    
 
