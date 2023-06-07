@@ -11,7 +11,8 @@ class MembersController extends Controller
    public  function dbOperations()
     {   
         //Update data
-        return (array)DB::table('add_members')->insert([
+        return (array)DB::table('add_members')->where('id',3)
+        ->update([
             'name'=>'Maurine',
             'email'=>'felister@gmail.com',
             'password'=>'23',
