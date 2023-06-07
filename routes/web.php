@@ -14,6 +14,7 @@ use App\Http\Controllers\AddFlashController;
 use App\Http\Controllers\ListController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\AddMembers;
+use App\Http\Controllers\MembersController ;
 use GuzzleHttp\Middleware;
 
 
@@ -98,12 +99,14 @@ Route::post("addMember",[AddFlashController::class,'add']);
 Route::view("upload","uploadFile");
 Route::post("uploadFile",[UploadController::class,'index']);
 //Set languages
-Route::get('/lang/{lang}',function($lang)
-{
-    App::setlocale($lang);
-    return view("profileLanguage");
-}
-);
+// Route::get('/lang/{lang}',function($lang)
+// {
+//     App::setlocale($lang);
+//     return view("profileLanguage");
+// }
+// );
+Route::get("membersListed",[MembersController::class,'dbOperations']);
+Route::view("details","membersListed");
 Route::view("list","usersList");
 Route::post("list",[ListController::class,'index']);
 //Delete route
@@ -115,4 +118,6 @@ Route::view("edit","update");
 Route::post("edit",[ListController::class,'inputData']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
+
+
 
