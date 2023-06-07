@@ -9,14 +9,23 @@ class MembersController extends Controller
 {
     //
    public  function dbOperations()
-    {    
+    {   
+        //Update data
         return (array)DB::table('add_members')->insert([
-        'name'=>'Maurine',
-        'email'=>'maurine@gmail.com',
-        'password'=>'23',
-        'updated_at'=>'07/06/2023',
-        'created_at'=>'07/06/2023'
-    ]);
+            'name'=>'Maurine',
+            'email'=>'felister@gmail.com',
+            'password'=>'23',
+            'updated_at'=>'07/06/2023',
+            'created_at'=>'07/06/2023'
+        ]);
+        //insert data 
+    //     return (array)DB::table('add_members')->insert([
+    //     'name'=>'Maurine',
+    //     'email'=>'maurine@gmail.com',
+    //     'password'=>'23',
+    //     'updated_at'=>'07/06/2023',
+    //     'created_at'=>'07/06/2023'
+    // ]);
         //return (array)DB::table('add_members')->find(2);
         //Get the number of records
         //return DB::table('add_members')->count();
