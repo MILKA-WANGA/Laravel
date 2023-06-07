@@ -10,7 +10,7 @@ class MembersController extends Controller
     //
    public  function dbOperations()
     {   //Aggregate/Mathematical calculations
-        return (array)DB::table('add_members')->avg('id')
+        return (array)DB::table('add_members')->avg('id');
         //Delete Data
         // return (array)DB::table('add_members')->where('id',3)
         // ->delete();
