@@ -9,16 +9,20 @@ class MembersController extends Controller
 {
     //
    public  function dbOperations()
-    {   
+    {   //Aggregate/Mathematical calculations
+        return (array)DB::table('add_members')->avg('id')
+        //Delete Data
+        // return (array)DB::table('add_members')->where('id',3)
+        // ->delete();
         //Update data
-        return (array)DB::table('add_members')->where('id',3)
-        ->update([
-            'name'=>'Maurine',
-            'email'=>'felister@gmail.com',
-            'password'=>'23',
-            'updated_at'=>'07/06/2023',
-            'created_at'=>'07/06/2023'
-        ]);
+        // return (array)DB::table('add_members')->where('id',3)
+        // ->update([
+        //     'name'=>'Maurine',
+        //     'email'=>'felister@gmail.com',
+        //     'password'=>'23',
+        //     'updated_at'=>'07/06/2023',
+        //     'created_at'=>'07/06/2023'
+        // ]);
         //insert data 
     //     return (array)DB::table('add_members')->insert([
     //     'name'=>'Maurine',
