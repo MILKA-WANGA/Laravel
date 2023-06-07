@@ -11,14 +11,13 @@
     
         @foreach ($data as $item)
         <tr>
-            <td>{{$item[id]}}</td>
-            <td>{{$item[name]}}</td>
-            <td>{{$item[email]}}</td>
-            <td>{{$item[Password]}}</td>
-            <td>{{$item{updated_at}}}</td>
-            <td>{{$item[created_at]}}</td>
-        </tr>
-            
+            <td>{{$item['id']}}</td>
+            <td>{{$item['name']}}</td>
+            <td>{{$item['email']}}</td>
+            <td>{{$item['Password']}}</td>
+            <td>{{$item['updated_at']}}</td>
+            <td>{{$item['created_at']}}</td>
+        </tr>            
         @endforeach
     
 </table>
