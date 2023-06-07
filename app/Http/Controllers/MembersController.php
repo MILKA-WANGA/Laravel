@@ -11,11 +11,11 @@ class MembersController extends Controller
    public  function dbOperations()
     {    
         return (array)DB::table('add_members')->insert([
-        'name'=>'name',
-        'email'=>'email',
-        'password'=>'password',
-        'updated_at'=>'updated_at',
-        'created_at'=>'created_at'
+        'name'=>'Maurine',
+        'email'=>'maurine@gmail.com',
+        'password'=>'23',
+        'updated_at'=>'07/06/2023',
+        'created_at'=>'07/06/2023'
     ]);
         //return (array)DB::table('add_members')->find(2);
         //Get the number of records
