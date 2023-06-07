@@ -10,7 +10,8 @@ class MembersController extends Controller
     //
    public  function dbOperations()
     {
-        return DB::table('add_members')->where ('id',1)->get();
+        return (array)DB::table('add_members')->find(2);
+       // return DB::table('add_members')->where ('id',1)->get();
         
         //return view("membersListed",['data'=>$data]);
         // return view("membersListed");
