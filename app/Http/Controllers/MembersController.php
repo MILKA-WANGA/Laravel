@@ -9,8 +9,12 @@ class MembersController extends Controller
 {
     //
    public  function dbOperations()
-    {   //Aggregate/Mathematical calculations
-        return (array)DB::table('add_members')->avg('id');
+
+    {  //Employee join operation
+        return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->get();
+        
+        //Aggregate/Mathematical calculations
+        //return (array)DB::table('add_members')->avg('id');
         //Delete Data
         // return (array)DB::table('add_members')->where('id',3)
         // ->delete();
