@@ -10,8 +10,11 @@ class MembersController extends Controller
     //
    public  function dbOperations()
 
-    {  //Employee join operation
-        return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->get();
+    {   //Select data from speciic table e.g members 
+        return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->select('members.*')->get();
+        
+        //Employee join operation
+       // return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->get();
         
         //Aggregate/Mathematical calculations
         //return (array)DB::table('add_members')->avg('id');
