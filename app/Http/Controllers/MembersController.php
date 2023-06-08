@@ -10,8 +10,10 @@ class MembersController extends Controller
     //
    public  function dbOperations()
 
-    {   //Select data from speciic table e.g members 
-        return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->select('members.*')->get();
+    {  
+         return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->where('members.id',8)->get();
+        //Select data from speciic table e.g members 
+       // return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->select('members.*')->get();
         
         //Employee join operation
        // return DB::table('members')->join('add_members','members.id', "=" , 'add_members.id')->get();
