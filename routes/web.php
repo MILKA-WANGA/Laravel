@@ -17,6 +17,7 @@ use App\Http\Controllers\AddMembers;
 use App\Http\Controllers\MembersController ;
 use App\Http\Controllers\AccessController ;
 use App\Http\Controllers\MutateController;
+use App\Http\Controllers\OneRelationController;
 use GuzzleHttp\Middleware;
 
 
@@ -122,6 +123,7 @@ Route::post("edit",[ListController::class,'inputData']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
 Route::get("mutate",[MutateController::class,'index']);
+Route::get("one",[OneRelationController::class,'index']);
 
 
 
