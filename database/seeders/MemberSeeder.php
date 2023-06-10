@@ -7,7 +7,8 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 //import string
 use Illuminate\Support\Str;
-use Illuminate\Support\Str;
+
+
 
 class MemberSeeder extends Seeder
 {
@@ -21,7 +22,7 @@ class MemberSeeder extends Seeder
         //
         DB::table('members')->insert([
             'name'=>Str::random(10),
-            'idNumber'=>int::random(10),
+            'idNumber'=>Str::random(10),
              'role'=>Str::ramdom(10),
              'dateOfBirth'=>Str::random(10)
         ]);

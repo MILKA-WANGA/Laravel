@@ -15,6 +15,7 @@ use App\Http\Controllers\ListController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\AddMembers;
 use App\Http\Controllers\MembersController ;
+use App\Http\Controllers\AccessController ;
 use GuzzleHttp\Middleware;
 
 
@@ -119,5 +120,6 @@ Route::post("edit",[ListController::class,'inputData']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
 
+Route::get("access",[AccessController::class,'index']);
 
 
