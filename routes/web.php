@@ -35,6 +35,7 @@ Route::get("/", function () {
     
     return view('welcome');
 });
+Route::get("/access",[AccessController::class,'index']);
 Route::get('/about',function()
 {
     return view('about');
@@ -120,6 +121,6 @@ Route::post("edit",[ListController::class,'inputData']);
 Route::post("adUsers",[AddMembers::class,'show']);
 Route::view("ad","adUsers");
 
-Route::get("access",[AccessController::class,'index']);
+
 
 
