@@ -8,7 +8,7 @@ use App\Models\Device;
 class DevicesController extends Controller
 {
     //
-    function index()
+    function list()
     {
      return Device::all();
     }
