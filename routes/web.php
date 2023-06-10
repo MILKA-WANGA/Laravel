@@ -19,6 +19,7 @@ use App\Http\Controllers\AccessController ;
 use App\Http\Controllers\MutateController;
 use App\Http\Controllers\OneRelationController;
 use GuzzleHttp\Middleware;
+use Illuminate\Support\Str;
 
 
 
@@ -32,7 +33,16 @@ use GuzzleHttp\Middleware;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Fluent String
+// $data="hi am Milka how can I help you";
+//  $data=Str::of($data)    
+//     -> ucfirst($data);
+
+//     return $data
+
 //Pass data
+
+
 Route::get("/", function () {
     
     return view('welcome');
