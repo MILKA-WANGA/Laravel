@@ -9,7 +9,7 @@ class MyFirst extends Controller
     //
     function index()
     {
-        return["name"=>"John"];
+        return["name"=>"John","email"=>"john@gmail.com","password"=>"Mw1234"];
     }
 }
 ?>
