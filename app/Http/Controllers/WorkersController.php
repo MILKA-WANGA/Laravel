@@ -38,6 +38,18 @@ class WorkersController extends Controller
             return ["result"=>"Update failed!"];
         }
     }
+    function delete($id)
+    {
+        $worker=Worker::find($id);
+        $result=$worker->delete();
+        if($result)
+        {
+            return ["result"=>"Data deleted for the id ".$id];
+        }
+        else{
+            return ["result"=>"Data not deleted"];
+        }
+    }
    
     
         

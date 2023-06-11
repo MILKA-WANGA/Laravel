@@ -24,3 +24,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get("data",[MyFirst::class,'index']);
 Route::get("pro",[DevicesController::class,'list']);
 Route::post("show",[WorkersController::class,'add']);
+Route::put("update",[WorkersController::class,'update']);
+//Route::delete("delete",[WorkersController::class,'delete']);
