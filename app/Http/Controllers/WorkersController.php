@@ -54,7 +54,7 @@ class WorkersController extends Controller
     //search results
     function search($name)
     {
-        return Worker::find("name",$name);
+        return Worker::where("name",$name)->get();
     }
    
     
