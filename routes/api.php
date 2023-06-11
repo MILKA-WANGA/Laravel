@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyFirst;
 use App\Http\Controllers\DevicesController;
-use App\Http\Controllers\Workers;
+use App\Http\Controllers\WorkersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get("data",[MyFirst::class,'index']);
 Route::get("pro",[DevicesController::class,'list']);
-Route::post("register",[Workers::class,'add']);
+Route::post("show",[WorkersController::class,'add']);
