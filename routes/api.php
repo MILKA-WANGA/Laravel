@@ -26,3 +26,4 @@ Route::get("pro",[DevicesController::class,'list']);
 Route::post("show",[WorkersController::class,'add']);
 Route::put("update",[WorkersController::class,'update']);
 Route::delete("delete/{id}",[WorkersController::class,'delete']);
+Route::search("search{name}",[WorkersController::class,'search']);
