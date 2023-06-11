@@ -25,4 +25,4 @@ Route::get("data",[MyFirst::class,'index']);
 Route::get("pro",[DevicesController::class,'list']);
 Route::post("show",[WorkersController::class,'add']);
 Route::put("update",[WorkersController::class,'update']);
-Route::delete("delete{id}",[WorkersController::class,'delete']);
+Route::delete("delete/{id}",[WorkersController::class,'delete']);

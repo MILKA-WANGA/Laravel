@@ -40,6 +40,7 @@ class WorkersController extends Controller
     }
     function delete($id)
     {
+        
         $worker=Worker::find($id);
         $result=$worker->delete();
         if($result)
@@ -49,6 +50,11 @@ class WorkersController extends Controller
         else{
             return ["result"=>"Data not deleted"];
         }
+    }
+    //search results
+    function search($name)
+    {
+        return Worker::find("name",$name);
     }
    
     
