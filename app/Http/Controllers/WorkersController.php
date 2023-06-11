@@ -24,6 +24,20 @@ class WorkersController extends Controller
             return ["result"=>"Data not saved"];
         }
     }
+    function update(Request $req)
+    {
+        $worker=Worker::find($req->id);
+        $worker->name=$req->name;
+        $worker->email=$req->email;
+        $result=$worker->save();
+        if($result)
+        {
+            return ["result"=>"Data updated successful"];
+        }
+        else{
+            return ["result"=>"Update failed!"];
+        }
+    }
    
     
         
